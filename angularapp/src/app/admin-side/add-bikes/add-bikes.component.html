@@ -1,0 +1,66 @@
+<app-admin-navbar></app-admin-navbar>
+<!DOCTYPE html>
+<html>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+
+<div class="navbar">
+  <!-- <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a> 
+  <a href="#"><i class="fa fa-fw fa-profile"></i> Prof</a> 
+  <a href="#"><i class="fa fa-fw fa-Bookings"></i> Bookings</a>  -->
+  <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Login</a> -->
+  <!-- <nav>
+   
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/profile">profile</a>
+</nav> -->
+</div>
+
+<form>
+	
+		<table class="center">
+			<tr>
+				<td> <label> Enter Bike Name: </label> </td>
+				<td><input type="text" name="bikename" id="bikename" maxlength="50" /> </td>
+			</tr>
+            <tr>
+				<td><label>Enter Bike Model</label></td>
+				<td><input type="text" name="bikemodel" id="bikemodel"/></td>
+			</tr>
+			
+		
+			<tr>
+				<td><label> Bike Type:</label></td>
+				<td>
+				<select  name="biketype" id="biketype"> 
+		 	   	<option> With Gear </option>
+				<option> Without Gear </option>
+				</select>
+				</td>
+			</tr>
+            <tr>
+				<td> <label>  Enter Amount Per Hour </label> </td>
+				<td><input type="number" name="amount"id="amount"/> </td>
+			</tr>
+    
+			<tr>
+				<td></td>
+				<td><button routerLink="/dashboard">Add Bike</button></td>
+			</tr>
+
+		
+		</table>
+
+		
+		
+	    </form>
+
+</body>
+</html> 
