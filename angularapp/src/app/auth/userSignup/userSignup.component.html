@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup</title>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body style="width:100%; height:600px;">
+	<div class="register">
+	 
+	<form>
+	    <div class="center">
+		<table >
+			<h2 style="text-align:center;">SIGNUP FORM </h2>
+			<tr>
+				<!-- <td> <label> Enter E-mail: </label> </td> -->
+				<td><input type="email" name="email" id="email" placeholder="Enter Email" maxlength="50" /> </td>
+
+			</tr><br>
+            <tr>
+				<!-- <td><label>Password:</label></td> -->
+				<td><input type="password" name="pass" id="password" placeholder="Enter Password" minlength="8"/></td>
+			</tr><br>
+			<tr>
+				<!-- <td> <label> Enter Mobile Number </label> </td> -->
+				<td><input type="tel" name="mobilenumber"id="mobilenumber" placeholder="Enter Mobile Number" maxlength="50" /> </td>
+			</tr><br>
+
+		
+			<tr>
+				<!-- <td><label> User Type:</label></td> -->
+				<td>
+				<select  name="usertype" id="usertype" placeholder="User">
+		 	   	<option> User </option>
+				<option> Admin </option>
+				</select>
+				</td>
+
+			</tr><br>
+            <tr>
+                <!-- <td><label>Username:</label></td> -->
+                <td><input type="text" name="username" id="username" placeholder="Enter Username" /><td>
+            </tr><br>
+            <tr>
+                <!-- <td><label>Age:</label></td> -->
+                <td><input type="number" name="age" id="age" placeholder="Enter Age" /><td>
+            </tr><br>
+			<input type="submit" style="background-color:rgba(255, 166, 0, 0.61); " routerLink ="/userDashboard" id="submitButton" value="Submit" />
+			
+				
+					<p>Go to Login</p>
+				<nav>
+					<a routerLink="/login">click here</a>
+				</nav>
+			
+			
+			<br>
+		
+		</table>
+	</div>
+	    </form>
+		
+</div>
+
+    </body>
+</html>

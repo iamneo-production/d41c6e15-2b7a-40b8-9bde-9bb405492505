@@ -1,0 +1,50 @@
+<html>
+<head>
+   BikeBooking
+</head>
+
+<body>
+ <div class="wrapper">
+    <div class="login" >
+    <div class="title"  style="text-align:center; width:100%; height:600px" >
+    
+    
+    <form class="register">
+        <div class="register_switch" routerLink ="/login"  >
+            <!-- <button class="tablinks" style="text-align:center;" onClick="openLogin(event,'User')">User</button>
+        
+            <button class="tablinks" style="text-align:center;" onClick="openLogin(event,'Admin')">Admin</button> -->
+
+            <input type="radio" name="tab" value="U" id="userTab" routerLink="/login" class="register-switch-input" checked>
+            <label for="userTab" class="register-switch-label">User</label>
+            <input type="radio" name="tab" value="A" id="adminTab" routerLink="/adminlogin" class="register-switch-input">
+            <label for="adminTab" class="register-switch-label">Admin</label>
+        </div><br><br><br>
+        <h1>LOG IN</h1>
+        <div style="text-align:center;">
+            
+            <input style="text-align:center;" type="text" id="email" placeholder="Enter User Name"ng-model="student.username" /> <br /><br/>
+
+            
+
+                <input style="text-align:center;" type="password" id="password" placeholder="Enter Password" ng-model="student.password" /> <br/><br />
+
+            
+            <nav>
+                
+                <input type="submit" style="background-color:rgba(255, 166, 0, 0.61); " routerLink ="/userDashboard" id="submitButton" value="Submit" />
+            </nav>
+       <p> New to Booking?</p>
+       <nav>
+           <a id="userSignupLink" routerLink ="/userSignup">Click here</a>
+          
+       </nav>
+           
+
+
+       </div>
+       <br>
+    </form>
+    </div>
+    </div> 
+    </div> 

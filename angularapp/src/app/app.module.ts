@@ -25,9 +25,7 @@ import { SuperAdminLoginComponent } from './super-admin-side/super-admin-login/s
 import { SuperAdminNavbarComponent } from './super-admin-side/super-admin-navbar/super-admin-navbar.component';
 import { SuperAdminDasboardComponent } from './super-admin-side/super-admin-dasboard/super-admin-dasboard.component';
 import { SuperAdminAllbookingsComponent } from './super-admin-side/super-admin-allbookings/super-admin-allbookings.component';
-import { AuthComponent } from './auth/auth.component';
-import { ModelsComponent } from './models/models.component';
-import { UserSideComponent } from './user-side/user-side.component';
+import { AdminNavbarComponent } from './admin-side/admin-navbar/admin-navbar.component';
 
 
 
@@ -58,9 +56,6 @@ import { UserSideComponent } from './user-side/user-side.component';
     SuperAdminNavbarComponent,
     SuperAdminDasboardComponent,
     SuperAdminAllbookingsComponent,
-    AuthComponent,
-    ModelsComponent,
-    UserSideComponent,
     
     
   ],

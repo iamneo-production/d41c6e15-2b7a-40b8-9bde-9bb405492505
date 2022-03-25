@@ -1,25 +1,19 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { UserSideComponent } from './user-side.component';
 
 describe('UserSideComponent', () => {
   let component: UserSideComponent;
-  let fixture: ComponentFixture<UserSideComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ UserSideComponent ]
-    })
-    .compileComponents();
-  });
-
+  beforeEach(()=>TestBed.configureTestingModule({
+    imports:[HttpClientTestingModule],
+    providers:[UserSideComponent]
+  }))
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserSideComponent);
+    const fixture = TestBed.createComponent(UserSideComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
-
-  it('should create', () => {
+  it('test_case13', () => {
     expect(component).toBeTruthy();
   });
 });

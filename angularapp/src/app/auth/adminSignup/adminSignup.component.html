@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup</title>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+	 <h1>SIGNUP FORM </h1>
+	<form>
+	
+		<table class="center">
+			<tr>
+				<td> <label> Enter E-mail: </label> </td>
+				<td><input type="email" name="email" id="email" maxlength="50" /> </td>
+			</tr>
+            <tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="pass" id="password" minlength="8"/></td>
+			</tr>
+			<tr>
+				<td> <label> Enter Mobile Number </label> </td>
+				<td><input type="tel" name="mobilenumber"id="mobilenumber"  maxlength="50" /> </td>
+			</tr>
+		
+			<tr>
+				<td><label> User Type:</label></td>
+				<td>
+				<select  name="usertype" id="usertype">
+		 	   	<option> User </option>
+				<option> Admin </option>
+				</select>
+				</td>
+			</tr>
+            <tr>
+                <td><label>Username:</label></td>
+                <td><input type="text" name="username" id="username" /><td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" name="age" id="age" /><td>
+            </tr>
+            <tr>
+                <td><label>Enter Company name:</label></td>
+                <td><input type="text" name="Companyname" id="Companyname" /><td>
+            </tr>
+            <tr>
+                <td><label>Enter Company image url:</label></td>
+                <td><input type="url" name="CompanyimageURL" id="CompanyimageURL" /><td>
+            </tr>
+            <tr>
+                <td><label>Enter Company Address:</label></td>
+                <td><input type="text" name="Companyaddress" id="Companyaddress" /><td>
+            </tr>
+			<tr>
+				<td></td>
+				<td><input type="Submit"/> </td>
+			</tr>
+			<tr>
+				
+				<td>	Go to Login</td>
+				<td><nav>
+					<a routerLink="/adminnavbar">click here</a><br/>
+				</nav></td>
+					
+			</tr>
+		
+		</table>
+
+		
+		
+	    </form>
+		
+    </body>
+</html>

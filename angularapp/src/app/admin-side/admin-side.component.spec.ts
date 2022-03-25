@@ -1,25 +1,19 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { AdminSideComponent } from './admin-side.component';
 
 describe('AdminSideComponent', () => {
   let component: AdminSideComponent;
-  let fixture: ComponentFixture<AdminSideComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AdminSideComponent ]
-    })
-    .compileComponents();
-  });
-
+  beforeEach(()=>TestBed.configureTestingModule({
+    imports:[HttpClientTestingModule],
+    providers:[AdminSideComponent]
+  }));
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminSideComponent);
+    const fixture = TestBed.createComponent(AdminSideComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
-
-  it('should create', () => {
+  it('test_case12', () => {
     expect(component).toBeTruthy();
   });
 });
