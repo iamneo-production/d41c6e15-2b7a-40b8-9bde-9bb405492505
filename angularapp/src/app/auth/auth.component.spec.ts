@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-// import { RouterTestingModule } from '@angular/router/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { LoginComponent } from './login.component';
+import { AuthComponent } from './auth.component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
+describe('AuthComponent', () => {
+  let component: AuthComponent;
   beforeEach(() => TestBed.configureTestingModule({
     imports: [HttpClientTestingModule], 
-    providers: [LoginComponent]
+    providers: [AuthComponent]
   }));
   beforeEach(() => {
-    const fixture = TestBed.createComponent(LoginComponent);
+    const fixture = TestBed.createComponent(AuthComponent);
     component = fixture.componentInstance;
   });
-  it('test_case19', () => {
+  it('test_case18', () => {
     expect(component).toBeTruthy();
   });
 });
